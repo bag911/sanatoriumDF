@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Page Title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" th:href="@{css/style.css}">
+    <style>
+        
+    </style>
+</head>
+<body>
+<header th:insert="blocks/header::header"></header>
+<div class="main">
+<h2>Наши услуги</h2>
+
+<div class="row">
+    <div class="column">
+        <div class="card">
+            <img src="https://images.ctfassets.net/wpk8fz5zicme/5CmiPTQhNYw6GiqGYQksQk/75179b40f2ad61e40d08da005a3b2c18/elekroson_tes.jpg?w=1000&h=1000" alt="">
+            <div class="card1">
+                <h3>Электросон</h3>
+                <p>Улучшение ЦНС с помощью электросонтерапия.</p>
+                <a href="/form">Записаться</a>
+            </div>
+        </div>
+    </div>
+    <div class="column">
+        <div class="card">
+            <img src="https://www.nerolisalonspa.com/media/Massage-Men-01-2-768x512.jpg" alt="">
+            <div class="card1">
+                <h3>Массаж</h3>
+                <p>Профилактический и лечебный метод воздействия на организм человека.</p>
+                <a href="/form">Записаться</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="card">
+            <img th:src="@{pool.png}" width="101%" height="101%">
+            <div class="card1">
+                <h3>Бассейн в номер</h3>
+                <p>Позабодьтесь о своём позвоночнике.</p>
+                <a href="/form">Записаться</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="card">
+            <img src="https://i.ytimg.com/vi/V4lojBTL5Ks/maxresdefault.jpg" alt="">
+            <div class="card1">
+                <h3>Грязевые ванны</h3>
+                <p>Продлить красоту и сохранить молодость помогут.</p>
+                <a href="/form" th:fields="*{Dirt}">Записаться</a>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Page Title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" th:href="@{css/style.css}">
+    </head>
+    <body class="main_page">
+
+        <header th:insert="blocks/header::header"></header>
+        <div class="vedBG">
+            <div class="text_intro">
+                <h1>Санаторий Дядя Флоппа</h1>
+                <p>У нас Вам будет комфортно.</p>
+                <form action="/form" method="GET">
+                    <button class="button button2">Записаться</button>
+                </form>
+            </div>
+            <video id="videoBG" th:src="@{./vidbg.mp4}" autoplay loop muted></video>
+
+        </div>
+
+    </body>
+</html>
